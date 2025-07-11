@@ -11,6 +11,6 @@ await app.register(cors, {
 
 await app.register(plansRoutes);
 
-app.listen({ port: 5000 }, () => {
+app.listen({ port: 5000, host: "0.0.0.0" }, () => {
   console.log("Server running on http://localhost:5000");
 });
